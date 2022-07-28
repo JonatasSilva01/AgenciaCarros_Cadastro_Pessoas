@@ -10,21 +10,22 @@ namespace Modelo
         public void LerUsuario()
         {
             Console.WriteLine("=============Painel de Usuario=============");
-            Base us = new Usuario();
+            Base Us = new Usuario();
             Console.WriteLine("Escreva seu nome: ");
-            us.Name = Console.ReadLine();
+            Us.Name = Console.ReadLine();
             Console.WriteLine("Escreva seu CPF: ");
-            us.Cpf = Console.ReadLine();
+            Us.Cpf = Console.ReadLine();
             Console.WriteLine("Escreva seu Telefone: ");
-            us.Telefone = Console.ReadLine();
+            Us.Telefone = Console.ReadLine();
             Console.Clear();
-            us.Gravar();
+            Us.Gravar();
 
-            foreach (Base cl in new Usuario().SetGenericReading())
+            foreach (Base us in new Usuario().SetGenericReading())
             {
-                Console.WriteLine(cl.Name);
-                Console.WriteLine(cl.Telefone);
-                Console.WriteLine(cl.Cpf);
+                Console.WriteLine("============================================");
+                Console.WriteLine("Nome: " + us.Name);
+                Console.WriteLine("Telefone: " + us.Telefone);
+                Console.WriteLine("CPF: " + us.Cpf);
                 Console.WriteLine("============================================");
             }
         }

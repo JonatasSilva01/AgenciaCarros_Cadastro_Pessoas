@@ -22,9 +22,10 @@ namespace Modelo
         {
             Console.WriteLine("\n" +
                 "Enviando email para: " + Destino + "\n" +
-                "Com o Titulo: " + Titulo + "\n" +
                 "Com a origin: " + Origin + "\n" +
+                "Com o Titulo: " + Titulo + "\n" +
                 "Com o corpo: " + Corpo + "\n");
+
         }
 
         public static Email Instancia

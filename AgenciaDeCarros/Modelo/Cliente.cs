@@ -21,9 +21,10 @@ namespace Modelo
 
             foreach (Base cl in new Cliente().SetGenericReading())
             {
-                Console.WriteLine(cl.Name);
-                Console.WriteLine(cl.Telefone);
-                Console.WriteLine(cl.Cpf);
+                Console.WriteLine("============================================");
+                Console.WriteLine("Nome: " + cl.Name);
+                Console.WriteLine("Telefone: " + cl.Telefone);
+                Console.WriteLine("CPF: " + cl.Cpf);
                 Console.WriteLine("============================================");
             }
         }
