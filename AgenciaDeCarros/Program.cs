@@ -7,6 +7,14 @@ namespace AgenciaDeCarros
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("============================ Email =============================");
+            Email.Instancia.Titulo = "Curso em Video";
+            Email.Instancia.Corpo = "Olá vim pegar meu curso de C#";
+            Email.Instancia.Origin = "jonsilvasantos7@gmail.com";
+            Email.Instancia.Destino = "jhownsantossilva@ggmail.com";
+            Email.Instancia.EnviarEmail();
+            Console.WriteLine("================================================================");
+            /*
             Console.WriteLine("============================= Menu =============================");
             Console.WriteLine("\n" +
                 "       1 - Para Registrar Usuario \n" +
@@ -24,6 +32,7 @@ namespace AgenciaDeCarros
                 cl.LerCliente();
             }
             Console.WriteLine("=================================================================");
+            */
         }
     }
 }
