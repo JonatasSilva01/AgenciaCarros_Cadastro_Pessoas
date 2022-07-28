@@ -19,7 +19,7 @@ namespace Agencia
                 int CLIENTE_USUARIO = 2;
                 int MANDAR_EMAIL = 3;
 
-                Console.Clear();
+                
                 Console.WriteLine("================================================================");
                 Console.WriteLine($"Parar programa é {PARAR_PROGRAMA} \n" +
                     $"Cadastrar Usuario é {USUARIO_RESPOSTA}\n" +
